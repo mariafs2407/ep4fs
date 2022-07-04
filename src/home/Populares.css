@@ -1,0 +1,69 @@
+.tituno{
+    color: #505050;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    text-align: center;
+}
+.titdos{
+    color: #0b0e16;
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.card .card-body .tittres{
+    font-size: 15px;
+    color: #505050;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+}
+.card-body .card-text{
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    color: #0b0e16;
+    text-align: center;
+    transition:  0.2s ;
+}
+.card-body .card-text:hover{
+    text-decoration: 2px underline;       
+}
+.galeria{
+    padding-top: 20px;
+    
+}
+.galeria .col{
+    padding: 15px;
+}
+.galeria .col .card{  
+    border: 2px #fff solid;
+    border-radius:  6px ;
+    margin-bottom: 30px;
+    
+}
+.col .card .divimg{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;    
+    height: 350px; 
+    overflow: hidden;
+}
+.col .card img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s; 
+    object-fit: cover;
+}
+.col .card img:hover{
+    transform: scale(1.5);
+}
+.btn-group .color{
+    color: #12BB94;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-group .color:hover{
+    opacity: 0.5;
+}
+.btn-group .color .bi{
+    width: 20px;
+    height: 20px;
+}

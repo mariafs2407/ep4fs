@@ -1,0 +1,73 @@
+#conocemos{
+    padding: 120px 0px 80px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.contenidoo{    
+    padding: 5% 10%;
+    /* width: 70%;        */
+}
+.img1{
+    padding: 20px 20px;
+    width: 420px;
+    height: 617px;
+}
+.texto{
+    background: rgb(247, 249, 253);
+    border-radius: 6px;
+    margin-top: -80%;   
+    margin-left: 60%;   
+    padding: 10px;   
+    position: relative; 
+}
+.bord{
+    background-color: rgb(247, 249, 253);
+    width: 200px;
+    height: 230px;
+    position: relative; 
+    padding: 40px 35px;
+    border: 1px solid #abb8c3; 
+    border-radius: 6px;
+}
+.letra{
+    font-family: 'Playfair Display', serif;
+    color:  #041a57;
+    font-size: 25px;
+}
+
+.nav-link{
+    color: #12BB94;
+    font-family: 'Roboto', sans-serif; 
+}
+.nav-link:hover{
+    color: black;
+}
+/* ------------------------------------------ */
+.contenido2 .titulo{
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-size: 48px;
+    
+}
+.contenido2{
+    padding: 10% 7% 10% 3%;
+    width: 80%;  
+}
+
+.txt{
+    color: #333333;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Roboto', sans-serif;     
+}
+.txtcolor{
+    color: black;    
+    font-size: 16px;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;     
+}
+.txtcolor:hover{
+    color: #12BB94;    
+}

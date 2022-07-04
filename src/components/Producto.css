@@ -1,0 +1,30 @@
+.card .imgproducto{
+    overflow: hidden;
+}
+
+.card .imgproducto img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s; 
+    object-fit: cover;
+    padding: 12px;
+}
+.card .imgproducto img:hover{
+    transform: scale(1.2);
+}
+.precio-lista {
+    text-decoration: line-through;
+    font-size: 0.9em;
+    color: #505050;
+}
+.sin-oferta{
+    display: none;
+    font-family: 'Roboto', sans-serif; 
+}
+.con-oferta{
+    position:absolute;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #12BB94;
+    font-family: 'Roboto', sans-serif; 
+}
