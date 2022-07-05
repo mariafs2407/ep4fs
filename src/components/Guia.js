@@ -27,7 +27,7 @@ function Guia(props) {
                         <div className="col" key={item.nombre}>
                             <div className="card">
                                 <div className='divimg'>
-                                    <img src={"https://mariafsphp.herokuapp.com/img2/" + item.imagen} className="card-img-top" alt="..." />
+                                    <img src={"https://mariafsphp.herokuapp.com/img2/" + item.imagen} className="card-img-top efecto" alt="..." />
                                 </div>                                
                                 <div className="card-body">
                                     <h5 className="card-title">{item.destino}</h5>

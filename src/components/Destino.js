@@ -9,6 +9,9 @@ function Destino(props) {
     
     useEffect(()=>{
         leerDestinos();
+        setTimeout(() => {
+            document.getElementById("btnBuscar").click();
+        }, 1000);
     },[]);
 
     const leerDestinos = (e)=>{

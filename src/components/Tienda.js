@@ -66,7 +66,7 @@ function Tienda(props) {
                         <h3 className='titulouno'>{categoriaSeleccionada.nombre}</h3>
                         <p className='titulodos'> {categoriaSeleccionada.descripcion}</p>      
                         <Productos categoriaProducto ={categoriaSeleccionada.idcategoria
-                            != null ? categoriaSeleccionada.idcategoria: 0} />          
+                            != null ? categoriaSeleccionada.idcategoria: 1} />          
                     </div>
                 </div>
             </div>

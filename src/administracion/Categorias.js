@@ -24,7 +24,7 @@ function Categorias(props) {
     const mostrarTabla = () => {
         return (
             <table className='table'>
-                <thead className='table-dark'>
+                <thead className='table-white'>
                     <tr>
                         <th>Codigo</th>
                         <th>Nombre</th>

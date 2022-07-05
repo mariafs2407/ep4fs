@@ -32,10 +32,11 @@ function Productos(props) {
     const mostrarProductosTabla = () => {
         return (
             <table className='table'>
-                <thead className='table-dark'>
+                <thead className='table-white'>
                     <tr>
                         <th>Codigo</th>
-                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Descripcion</th>
                         <th className="text-end">Precio</th>
                     </tr>
                 </thead>
@@ -44,7 +45,10 @@ function Productos(props) {
                         <tr key={item.idproducto}>
                             <td>{item.idproducto}</td>
                             <td>{item.marca}</td>
-                            <td className="text-end">{parseFloat(item.precio).toFixed(2)}</td>
+                            <td>{item.descripcion}</td>
+                            <td className="text-end">S/
+                                    {item.preciorebajado === "0.00" ? parseFloat(item.precio).toFixed(2) :
+                                        parseFloat(item.preciorebajado).toFixed(2)}</td>
                         </tr>
                     )}
                 </tbody>
