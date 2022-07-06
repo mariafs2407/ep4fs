@@ -9,9 +9,11 @@
     text-transform: uppercase;
     line-height: 20px;    
     color: #0B0E16;    
+    text-decoration: none;
 }
 .nav-link .letra:hover{
     color: #12BB94;
+    text-decoration: none;
 }
 
 .post{
