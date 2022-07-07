@@ -14,7 +14,7 @@ function Tienda(props) {
     },[]);
 
     const leerCategorias =(e) =>{
-        const rutaServicio="https://mariafsphp.herokuapp.com/categorias.php";
+        const rutaServicio="https://mariafsphp.herokuapp.com/categoriados.php";
         fetch(rutaServicio)
         .then((response) => {
             return response.json();

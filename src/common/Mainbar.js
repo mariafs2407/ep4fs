@@ -14,7 +14,7 @@ function Mainbar(props) {
         <div className="container">
             <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start cajamayor">
                 <a href="/" className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-dark text-decoration-none">
-                <img  className="dark  mover" src="https://demo.themewinter.com/wp/qoxag/travel/wp-content/uploads/sites/12/2021/07/logo.png" alt="Blog de viajes Qoxag"/>
+                <img  className="dark img-fluid mover" src="https://demo.themewinter.com/wp/qoxag/travel/wp-content/uploads/sites/12/2021/07/logo.png" alt="Blog de viajes Qoxag"/>
                 </a>
     
                 <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">

@@ -28,3 +28,27 @@
     background-color: #12BB94;
     font-family: 'Roboto', sans-serif; 
 }
+
+.btnQuickView{
+    cursor: pointer;
+    margin-left: 10px;
+}
+.domicilio{
+    color: green;
+    font-family: 'Roboto', sans-serif; 
+}
+.no-domicilio{
+    color: #505050;
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+.espacio{
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif; 
+}
+.detatitulo{
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
