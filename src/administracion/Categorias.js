@@ -28,7 +28,7 @@ function Categorias(props) {
                 <thead className='table-white'>
                     <tr>
                         <th>Cod</th>
-                        <th>Nombre</th>
+                        <th>Marca</th>
                         <th>Descripcion</th>
                         <th></th>
                         <th></th>
