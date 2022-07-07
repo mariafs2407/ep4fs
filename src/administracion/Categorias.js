@@ -13,7 +13,7 @@ function Categorias(props) {
         leerCategorias();
     }, []);
     const leerCategorias = (e) => {
-        const rutaServicio ="https://mariafsphp.herokuapp.com/categorias.php";
+        const rutaServicio ="https://mariafsphp.herokuapp.com/categoriatres.php";
         fetch(rutaServicio)
             .then((response) => {
                 return response.json();
@@ -167,7 +167,7 @@ function Categorias(props) {
         event.preventDefault();
         document.querySelector("#insertModal .btn-close").click();
         //console.log(nombre + "----" + descripcion );
-        const rutaServicio = "https://mariafsphp.herokuapp.com/categoriainsert.php";
+        const rutaServicio = "https://mariafsphp.herokuapp.com/categoriatresinsert.php";
         var formData = new FormData();
         formData.append("nombre", nombre);
         formData.append("descripcion", descripcion);
@@ -191,7 +191,7 @@ function Categorias(props) {
         event.preventDefault();
         document.querySelector("#updateModal .btn-close").click();
 
-        const rutaServicio = "https://mariafsphp.herokuapp.com/categoriaupdate.php";
+        const rutaServicio = "https://mariafsphp.herokuapp.com/categoriatresupdate.php";
         var formData = new FormData();
         formData.append("idcategoria", idcategoria);
         formData.append("nombre", nombre);
@@ -212,7 +212,7 @@ function Categorias(props) {
         event.preventDefault();
         document.querySelector("#deleteModal .btn-close").click();
 
-        const rutaServicio = "https://mariafsphp.herokuapp.com/categoriadelete.php";
+        const rutaServicio = "https://mariafsphp.herokuapp.com/categoriatresdelete.php";
         var formData = new FormData();
         formData.append("idcategoria", idcategoria);
 
