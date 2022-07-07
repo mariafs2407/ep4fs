@@ -1,8 +1,31 @@
-.modal-footer .butoncolor{
+.titulog{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    padding: 20px 0px;
+}
+.mb-3 .butoncolor,.modal-footer .butoncolor{
     font-family: 'Roboto', sans-serif; 
     background:#12BB94; 
     border: 2px solid #12BB94 ;
     padding: 5px 8px;
     border-radius: 5px;
     color: #fff;
+}
+.modal-footer .butoncolor2{
+    font-family: 'Roboto', sans-serif; 
+    background:#505050; 
+    border: 2px solid #505050;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #fff;
+}
+.modal-footer .butoncolor2:hover{
+    border: 4px solid rgba(105, 109, 109, 0.699);
+}
+.modal-footer .butoncolor:hover,.mb-3 .butoncolor:hover{
+    border: 4px solid rgba(155, 224, 219, 0.479);
+}
+.opaci:hover{
+    transition: 0.5s; 
+    opacity: 0.5;
 }

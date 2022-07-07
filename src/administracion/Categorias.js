@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
+import './Categorias.css';
 
 function Categorias(props) {
     const [categorias, setCategorias] = useState([]);
@@ -43,10 +44,10 @@ function Categorias(props) {
                             <td>{item.descripcion}</td>
                             <td>{item.marcas}</td>
                             {/* boton editar */}
-                            <td><i className="bi bi-pencil-fill" onClick={() => llenarDatos(item)}
+                            <td><i className="bi bi-pencil-fill opaci" onClick={() => llenarDatos(item)}
                                 data-bs-toggle="modal" data-bs-target="#updateModal"></i></td>
                             {/* boton eliminar */}
-                            <td><i className="bi bi-x-lg" onClick={() => llenarDatos(item)}
+                            <td><i className="bi bi-x-lg opaci" onClick={() => llenarDatos(item)}
                                 data-bs-toggle="modal" data-bs-target="#deleteModal"></i></td>
                         </tr>
                     )}
@@ -106,8 +107,8 @@ function Categorias(props) {
                             </div>
                             {contenidoFormulario()}
                             <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="submit" className="btn btn-primary">Guardar</button>
+                                <button type="button" className="btn butoncolor2" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" className="btn butoncolor">Guardar</button>
                             </div>
                         </form>
                     </div>
@@ -128,8 +129,8 @@ function Categorias(props) {
                             </div>
                             {contenidoFormulario()}
                             <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="submit" className="btn btn-primary">Guardar</button>
+                                <button type="button" className="btn butoncolor2" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" className="btn butoncolor">Guardar</button>
                             </div>
                         </form>
                     </div>
@@ -152,8 +153,8 @@ function Categorias(props) {
                                 ¿Está seguro que desea eliminar {nombre}?
                             </div>
                             <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="submit" className="btn btn-primary">Eliminar</button>
+                                <button type="button" className="btn butoncolor2" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" className="btn butoncolor">Eliminar</button>
                             </div>
                         </form>
                     </div>
@@ -230,9 +231,9 @@ function Categorias(props) {
         <>
             <section id="categorias" className='padded'>
                 <div className="container">
-                    <h2>Categorías</h2>
+                    <h2 className='titulog '>Categorías :</h2>
                     <div className="mb-3">
-                        <button className='btn btn-primary' type='button'
+                        <button className='btn butoncolor' type='button'
                             onClick={() => borrarDatos()}
                             data-bs-toggle="modal" data-bs-target="#insertModal">
                             Añadir categoría
