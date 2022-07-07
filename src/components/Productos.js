@@ -107,7 +107,7 @@ function Productos(props) {
                             <div className="row">
                                 {/* imagen  */}
                                 <div className="col">
-                                    <img src={"https://mariafsphp.herokuapp.com/img3/" + itemProducto.imagen} className="img-fluid tam" alt="" />
+                                    <img src={"https://mariafsphp.herokuapp.com/img3/" + itemProducto.imagengrande} className="img-fluid tam" alt="" />
                                 </div>
                                 {/* contenido de imagen */}
                                 <div className="col">
@@ -129,10 +129,7 @@ function Productos(props) {
                                             <tr className='espacio'>
                                                 <th >Precio:</th>
                                                 <td>{itemProducto.preciorebajado === "0.00" ? parseFloat(itemProducto.precio).toFixed(2) :
-                                        parseFloat(itemProducto.preciorebajado).toFixed(2)}
-                                    <span className="precio-lista">
-                                        {itemProducto.preciorebajado !== "0" ? " (S/." + parseFloat(itemProducto.precio).toFixed(2) + ")"
-                                            : ""}</span> </td>
+                                        parseFloat(itemProducto.preciorebajado).toFixed(2)}</td>
                                             
                                             </tr>
                                         </tbody>

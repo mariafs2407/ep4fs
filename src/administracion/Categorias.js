@@ -6,6 +6,7 @@ function Categorias(props) {
     const [idcategoria, setIdcategoria] = useState('');
     const [nombre, setNombre] = useState('');
     const [descripcion, setDescripcion] = useState('');
+    const [marcas, setMarcas]= useState('');
 
     useEffect(() => {
         leerCategorias();
@@ -27,10 +28,10 @@ function Categorias(props) {
             <table className='table'>
                 <thead className='table-white'>
                     <tr>
-                        <th>Cod</th>
-                        <th>Marca</th>
+                        <th>Codigo</th>
+                        <th>Categoria</th>
                         <th>Descripcion</th>
-                        <th></th>
+                        <th>Marcas</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -40,6 +41,7 @@ function Categorias(props) {
                             <td>{item.idcategoria}</td>
                             <td>{item.nombre}</td>
                             <td>{item.descripcion}</td>
+                            <td>{item.marcas}</td>
                             {/* boton editar */}
                             <td><i className="bi bi-pencil-fill" onClick={() => llenarDatos(item)}
                                 data-bs-toggle="modal" data-bs-target="#updateModal"></i></td>
@@ -57,11 +59,13 @@ function Categorias(props) {
         setIdcategoria(item.idcategoria);
         setNombre(item.nombre);
         setDescripcion(item.descripcion);
+        setMarcas(item.marcas);
     }
     const borrarDatos = (item) => {
         setIdcategoria('');
         setNombre('');
         setDescripcion('');
+        setMarcas('');
     }
 
     const contenidoFormulario = () => {
@@ -80,6 +84,11 @@ function Categorias(props) {
                     <input type="text" className='form-control' placeholder='Descripción' value={descripcion}
                         required
                         onChange={(event) => setDescripcion(event.target.value)} />
+                </div>
+                <div className="mb-3">
+                    <input type="text" className='form-control' placeholder='Marcas' value={marcas}
+                        required
+                        onChange={(event) => setMarcas(event.target.value)} />
                 </div>
             </div>
         )
@@ -161,6 +170,7 @@ function Categorias(props) {
         var formData = new FormData();
         formData.append("nombre", nombre);
         formData.append("descripcion", descripcion);
+        formData.append("marcas",marcas);
 
         fetch(rutaServicio, {
             method: 'POST',
@@ -185,6 +195,7 @@ function Categorias(props) {
         formData.append("idcategoria", idcategoria);
         formData.append("nombre", nombre);
         formData.append("descripcion", descripcion);
+        formData.append("marcas",marcas);
 
         fetch(rutaServicio, {
             method: 'POST',
