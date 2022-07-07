@@ -1,15 +1,20 @@
 .card .imgproducto{
     overflow: hidden;
 }
+.row .imgproducto{
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+}
 
-.card .imgproducto img{
+.imgproducto img,.card .imgproducto img{
     width: 100%;
     height: 100%;
     transition: 0.5s; 
     object-fit: cover;
     padding: 12px;
 }
-.card .imgproducto img:hover{
+.imgproducto img:hover,.card .imgproducto img:hover{
     transform: scale(1.2);
 }
 .precio-lista {

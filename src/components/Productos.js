@@ -106,7 +106,7 @@ function Productos(props) {
                         <div className="modal-body">
                             <div className="row">
                                 {/* imagen  */}
-                                <div className="col">
+                                <div className="col imgproducto">
                                     <img src={"https://mariafsphp.herokuapp.com/img3/" + itemProducto.imagengrande} className="img-fluid tam" alt="" />
                                 </div>
                                 {/* contenido de imagen */}
