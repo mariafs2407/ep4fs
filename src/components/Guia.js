@@ -9,7 +9,7 @@ function Guia(props) {
     }, []);
 
     const leerLugares = (e) => {
-        const rutaServicio = "https://mariafsphp.herokuapp.com/lugares.php";
+        const rutaServicio = "https://php-ep4-react.vercel.app/lugares.php";
         fetch(rutaServicio)
             .then((response) => {
                 return response.json();
