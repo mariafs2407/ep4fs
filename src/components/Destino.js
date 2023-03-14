@@ -15,7 +15,7 @@ function Destino(props) {
     },[]);
 
     const leerDestinos = (e)=>{
-        const rutaServicio = "https://mariafsphp.herokuapp.com/destinos.php";
+        const rutaServicio = "https://php-ep4-react.vercel.app/destinos.php";
 
         fetch(rutaServicio)
         .then((response)=>{
