@@ -13,7 +13,7 @@ function Productos(props) {
     }, [props.categoriaProducto]);
 
     const leerProductos = (idcategoria) => {
-        const rutaServicio = "https://mariafsphp.herokuapp.com/productos.php";
+        const rutaServicio = "https://api-react-production.up.railway.app/productos";
 
         var formData = new FormData();
         formData.append("idcategoria", idcategoria);

@@ -15,7 +15,7 @@ function Destino(props) {
     },[]);
 
     const leerDestinos = (e)=>{
-        const rutaServicio = "https://php-ep4-react.vercel.app/destinos.php";
+        const rutaServicio = "https://api-react-production.up.railway.app/destinos";
 
         fetch(rutaServicio)
         .then((response)=>{

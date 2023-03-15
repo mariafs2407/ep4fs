@@ -9,7 +9,7 @@ function Guia(props) {
     }, []);
 
     const leerLugares = (e) => {
-        const rutaServicio = "https://php-ep4-react.vercel.app/lugares.php";
+        const rutaServicio = "https://api-react-production.up.railway.app/lugares";
         fetch(rutaServicio)
             .then((response) => {
                 return response.json();
