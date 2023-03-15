@@ -13,7 +13,7 @@ function Categorias(props) {
         leerCategorias();
     }, []);
     const leerCategorias = (e) => {
-        const rutaServicio ="https://api-react-production.up.railway.app/categoria.php";
+        const rutaServicio ="https://api-react-production.up.railway.app/categoria-dos.php";
         fetch(rutaServicio)
             .then((response) => {
                 return response.json();
