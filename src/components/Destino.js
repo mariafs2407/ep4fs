@@ -22,7 +22,7 @@ function Destino(props) {
             return response.json();
         })
         .then((data) =>{
-            setDestinos(data);
+            setDestinos(data.res);
             document.getElementById("btnBuscar").click();
         })
     }

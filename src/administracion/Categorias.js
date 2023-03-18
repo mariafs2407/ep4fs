@@ -20,7 +20,7 @@ function Categorias(props) {
             })
             .then((data) => {
                 //console.log(data);
-                setCategorias(data);
+                setCategorias(data.categoriados);
             })
     }
 

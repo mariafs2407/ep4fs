@@ -17,10 +17,11 @@ function Tienda(props) {
         const rutaServicio="https://api-react-production.up.railway.app/categoria";
         fetch(rutaServicio)
         .then((response) => {
+            //console.log(response)
             return response.json();
         })
         .then((data)=>{
-            setCategorias(data);
+            setCategorias(data.categoria);
         })
     }
     const mostrarCategorias = () => {

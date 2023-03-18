@@ -15,7 +15,7 @@ function Guia(props) {
                 return response.json();
             })
             .then((data) => {
-                setLugares(data);
+                setLugares(data.lugares);
             })
     }
     return (
@@ -24,7 +24,7 @@ function Guia(props) {
                 <h2>Lugares - Guias correspondientes:</h2>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {lugares.map(item =>
-                        <div className="col" key={item.nombre}>
+                        <div className="col" key={item.iddestino}>
                             <div className="card">
                                 <div className='divimg'>
                                     <img src={"https://php-ep4-react.vercel.app/img2/" + item.imagen} className="card-img-top efecto" alt="..." />

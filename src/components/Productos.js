@@ -12,21 +12,24 @@ function Productos(props) {
         leerProductos(props.categoriaProducto);
     }, [props.categoriaProducto]);
 
-    const leerProductos = (idcategoria) => {
-        const rutaServicio = "https://api-react-production.up.railway.app/productos";
-
+    const leerProductos = (idcategoria) => {      
+        const rutaServicio = 'https://api-react-production.up.railway.app/productos';
+        
         var formData = new FormData();
         formData.append("idcategoria", idcategoria);
+
+        
         fetch(rutaServicio, {
             method: 'POST',
             body: formData
         })
             .then((response) => {
-                return response.json();
+                console.log(response)
+                //return response.json();
             })
             .then((data) => {
-                console.log(data);
-                setProductos(data);
+                console.log(data.productos);
+                setProductos(data.productos);
             })
     }
 
@@ -107,7 +110,7 @@ function Productos(props) {
                             <div className="row">
                                 {/* imagen  */}
                                 <div className="col imgproducto">
-                                    <img src={"https://mariafsphp.herokuapp.com/img3/" + itemProducto.imagengrande} className="img-fluid tam" alt="" />
+                                    <img src={"https://php-ep4-react.vercel.app/img3/" + itemProducto.imagengrande} className="img-fluid tam" alt="" />
                                 </div>
                                 {/* contenido de imagen */}
                                 <div className="col">
