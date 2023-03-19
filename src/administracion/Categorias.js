@@ -13,14 +13,14 @@ function Categorias(props) {
         leerCategorias();
     }, []);
     const leerCategorias = (e) => {
-        const rutaServicio ="https://api-react-production.up.railway.app/categoria-dos.php";
+        const rutaServicio ="https://api-react-production.up.railway.app/categoriasdos";
         fetch(rutaServicio)
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
                 //console.log(data);
-                setCategorias(data.categoriados);
+                setCategorias(data.categoriasdos);
             })
     }
 
@@ -167,7 +167,7 @@ function Categorias(props) {
         event.preventDefault();
         document.querySelector("#insertModal .btn-close").click();
         //console.log(nombre + "----" + descripcion );
-        const rutaServicio = "https://mariafsphp.herokuapp.com/categoriatresinsert.php";
+        const rutaServicio = "https://api-react-production.up.railway.app/categoriasdos";
         var formData = new FormData();
         formData.append("nombre", nombre);
         formData.append("descripcion", descripcion);

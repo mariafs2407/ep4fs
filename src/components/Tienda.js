@@ -14,14 +14,14 @@ function Tienda(props) {
     },[]);
 
     const leerCategorias =(e) =>{
-        const rutaServicio="https://api-react-production.up.railway.app/categoria";
+        const rutaServicio="https://api-react-production.up.railway.app/categorias";
         fetch(rutaServicio)
         .then((response) => {
             //console.log(response)
             return response.json();
         })
         .then((data)=>{
-            setCategorias(data.categoria);
+            setCategorias(data.categorias);
         })
     }
     const mostrarCategorias = () => {
