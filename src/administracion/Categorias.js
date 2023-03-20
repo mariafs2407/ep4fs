@@ -13,7 +13,7 @@ function Categorias(props) {
         leerCategorias();
     }, []);
     const leerCategorias = (e) => {
-        const rutaServicio ="https://api-react-production.up.railway.app/categoriasdos";
+        const rutaServicio ="https://api-react-production.up.railway.app/categoriados";
         fetch(rutaServicio)
             .then((response) => {
                 return response.json();
@@ -167,7 +167,7 @@ function Categorias(props) {
         event.preventDefault();
         document.querySelector("#insertModal .btn-close").click();
         //console.log(nombre + "----" + descripcion );
-        const rutaServicio = "https://api-react-production.up.railway.app/categoriasdos";
+        const rutaServicio = "https://api-react-production.up.railway.app/categoriados";
         var formData = new FormData();
         formData.append("nombre", nombre);
         formData.append("descripcion", descripcion);
