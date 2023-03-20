@@ -17,7 +17,7 @@ function Tienda(props) {
         const rutaServicio="https://api-react-production.up.railway.app/categorias";
         fetch(rutaServicio)
         .then((response) => {
-            //console.log(response)
+            //console.log(response)..
             return response.json();
         })
         .then((data)=>{
